@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 35px 0px;
+}
+
+body {
+    background-color: #079983;
+}
+
+.login {
+    background: white;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+
+.login h1 {
+    color: #a4ebf3;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%;
+    height: 34px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    margin-bottom: 13px;
+    padding-left: 5px;
+    border: 2px solid #d6d6d6;
+}
+
+input[type="checkbox"] {
+    margin: 15px 0px;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    color: initial;
+    cursor: pointer;
+}
+
+.match {
+    display: flex;
+    padding: 0px 90px;
+    height: 30px;
+    margin-top: 20px;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.match a {
+    text-decoration: none;
+    color: initial;
+    transition: .5s;
+}
+
+.match a:hover {
+    color: #a4ebf3;
+}
+
+.or {
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+}
+
+.or::before {
+    content: "";
+    width: 300px;
+    top: 8px;
+    left: 0px;
+    position: absolute;
+    border: 1px solid #c3c0c0;
+}
+
+.or::after {
+    content: "";
+    width: 300px;
+    top: 8px;
+    right: 0px;
+    position: absolute;
+    border: 1px solid #c3c0c0;
+}
+
+.social {
+    margin: 30px;
+    padding: 0px 30%;
+}
+
+.social ul {
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.social ul li {
+    list-style: none;
+    height: 35px;
+    border-radius: 100%;
+    width: 35px;
+    transition: .5s;
+}
+
+.social ul #first-child {
+    background-color: #3b5998;
+}
+
+.social ul #second-child {
+    background-color: #00acee;
+}
+
+.social ul #third-child {
+    background-color: #0072b1;
+}
+
+.social ul li a {
+    text-decoration: none;
+}
+
+.social ul li i {
+    font-size: 20px;
+    color: white;
+    padding: 7px;
+}
+
+.social ul li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 20px 0px #025955;
+}
+
+/* .............responsive media queries............... */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media(max-width: 1200px) {
+    .or::before {
+        width: 210px;
+    }
+
+    .or::after {
+        width: 210px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (max-width: 992px) {
+    header {
+        margin: 50px 0px;
+    }
+
+    .login {
+        width: 90%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (max-width: 768px) {
+    #login {
+        max-width: 100%;
+    }
+
+    .or::before {
+        width: 178px;
+    }
+
+    .or::after {
+        width: 180px;
+    }
+
+    .social {
+        padding: 0px 24%;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 475px) {
+    #login {
+        max-width: 100%;
+    }
+
+    .match {
+        padding: 0px 0px;
+        justify-content: space-between;
+    }
+
+    .or::before {
+        width: 100px;
+    }
+
+    .or::after {
+        width: 100px;
+    }
+
+    .social {
+        padding: 0px 0px;
+    }
+}

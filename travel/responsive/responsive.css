@@ -1,0 +1,579 @@
+/* .......................this is mediaquory................ */
+
+@media (min-width: 1200px) {
+
+    /* ...container.. */
+    .container {
+        margin: auto;
+        padding: 0px 15px;
+    }
+
+    #container {
+        max-width: 100%;
+    }
+
+    nav .active {
+        display: none;
+    }
+
+    .OurLatestNewsContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 400px;
+    }
+
+    #NewsLeft {
+        height: 400px;
+    }
+
+    .NewsLeftImage {
+        height: 400px;
+    }
+
+    .NewsLeftImage img {
+        height: 400px;
+        width: 100%;
+    }
+
+    .NewsRightContaier {
+        padding: 15px 0px 0px 0px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .NewsRightContainerContent {
+        float: left;
+        margin-bottom: 0px;
+        margin-right: 0px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (max-width: 1200px) {
+
+    /* ...container.. */
+    .container {
+        margin: auto;
+        padding: 0px 15px;
+        max-width: 1050px;
+    }
+
+    #container {
+        max-width: 100%;
+    }
+
+    .NavigationBar {
+        justify-content: space-evenly;
+    }
+
+    nav .loging {
+        display: none;
+    }
+
+    #active {
+        margin-left: 4rem;
+    }
+
+    nav .active {
+        display: none;
+    }
+
+    .MainContent {
+        padding: 106px 150px;
+        padding-bottom: 0px;
+        max-width: 100%;
+        justify-content: space-between;
+    }
+
+    .asideBlog h3 {
+        left: 222px;
+    }
+
+    .PricePlaneContainer {
+        padding: 100px 0px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .PricePlaneBox {
+        margin-bottom: 40px;
+    }
+
+    .TeamContainer {
+        padding: 100px 50px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .TeamContainerContent {
+        margin-bottom: 40px;
+    }
+
+    .TeamContainerContent:last-child {
+        margin-bottom: 0px;
+    }
+
+    .OurLatestNewsContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 400px;
+    }
+
+    #NewsLeft {
+        height: 400px;
+    }
+
+    .NewsLeftImage {
+        height: 400px;
+    }
+
+    .NewsLeftImage img {
+        height: 400px;
+    }
+
+    .NewsRightContaier {
+        padding: 15px 0px 0px 0px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .NewsRightContainerContent {
+        float: left;
+        margin-bottom: 0px;
+        margin-right: 0px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (max-width: 992px) {
+
+    /* ...container.. */
+    .container {
+        margin: auto;
+        padding: 0px 15px;
+        max-width: 900px;
+    }
+
+    #container {
+        max-width: 100%;
+    }
+
+    /* ...this is navigation bar . */
+
+    .navBarLeft .logo {
+        margin-right: 10rem;
+        font-size: 28px;
+        font-weight: 900;
+    }
+
+    .hamburgoricons {
+        display: block;
+    }
+
+    .navBarRight {
+        z-index: 999;
+        width: 100%;
+        top: 55px;
+        left: 0;
+        transform: translateX(-63rem);
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.377);
+        box-shadow: -1px 21px 17px 12px rgba(0, 0, 0, 0.30);
+        -webkit-box-shadow: -1px 21px 17px 12px rgba(0, 0, 0, 0.30);
+        -moz-box-shadow: -1px 21px 17px 12px rgba(0, 0, 0, 0.30);
+        transition: .2s all ease-in-out;
+    }
+
+    .show-navBarRight {
+        transform: translateX(0);
+
+    }
+
+    .navBarRight ul li {
+        margin: 0px 45%;
+        width: 110px;
+    }
+
+    .navBarRight ul li a {
+        font-size: 20px;
+        color: var(--third-color);
+    }
+
+    .navBarRight ul {
+        flex-direction: column;
+    }
+
+    nav #active {
+        display: none;
+    }
+
+    nav .active {
+        display: block;
+        border-radius: 3px;
+        background-color: var(--primary-color);
+    }
+
+
+    /* ...main ... */
+
+    .MainContent {
+        padding: 106px 0px;
+        padding-bottom: 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    /* blog  */
+    .asideBlog h3 {
+        left: 150px;
+        font-size: 18px;
+    }
+
+    #rightcontentboxhide {
+        display: none;
+    }
+
+    /* price  */
+    .PricePlaneContainer {
+        padding: 100px 0px;
+    }
+
+    .PricePlaneContainer {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .PricePlaneBox {
+        margin-bottom: 50px;
+    }
+
+    .PricePlaneBox:last-child {
+        margin-bottom: 0px;
+    }
+
+    .PricePlaneBoxInfo {
+        padding: 10px 10px;
+    }
+
+    /* team  */
+    .TeamContainer {
+        padding: 100px 0px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .TeamContainerContent {
+        margin-bottom: 30px;
+    }
+
+    .TeamContainerContent:last-child {
+        margin-bottom: 0px;
+    }
+
+    #portugal {
+        display: none;
+    }
+
+    /* news */
+    #NewsRight {
+        padding: 20px 0px;
+    }
+
+    .NewsRightContaier {
+        padding: 15px 0px 0px 0px;
+        justify-content: space-between;
+    }
+
+    .NewsRightContainerContent {
+        width: 190px;
+        margin-right: 0px;
+    }
+
+    /* footer  */
+    .FooterContainerMail li input[type="email"] {
+        width: 152px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (max-width: 768px) {
+
+    /* ...container.. */
+    .container {
+        margin: auto;
+        padding: 0px 15px;
+        max-width: 600px;
+    }
+
+    #container {
+        max-width: 100%;
+    }
+
+    /* ...this is navigation bar . */
+
+    .NavigationBar {
+        justify-content: flex-start;
+    }
+
+    .navBarLeft .logo {
+        margin-right: 5rem;
+    }
+
+    /* banner */
+    .BannerContent {
+        padding: 130px 0px 0px;
+    }
+
+    .BannerContentHeader h1 {
+        width: 486px;
+        font-size: 33px;
+        line-height: 37px;
+    }
+
+    /* maincontnet */
+    .MainContent {
+        padding: 50px 0px;
+    }
+
+    /* blog  */
+    .BlogContainer {
+        padding-top: 50px;
+        flex-wrap: wrap;
+    }
+
+    aside {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .RightBlog {
+        width: 100%;
+    }
+
+    #rightcontentboxhide {
+        display: block;
+    }
+
+    .asideBlog h3 {
+        left: 170px;
+    }
+
+    /* price  */
+    .PricePlaneContainer {
+        padding: 50px 0px;
+    }
+
+    /* team  */
+    .TeamContainer {
+        padding: 50px 0px;
+    }
+
+    /* ourbestproject  */
+
+    .OurProjectContainer {
+        padding: 50px 0px;
+    }
+
+    .OurProjectContainerBox {
+        width: 350px;
+    }
+
+    .OurProjectContainerBox .ProjectInfo {
+        width: 350px;
+    }
+
+    #portugal {
+        display: block;
+    }
+
+    /* ourlatestnews  */
+
+    .OurLatestNewsContainer {
+        display: block;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: initial;
+    }
+
+    .NewLeft {
+        width: 100%;
+    }
+
+    .NewsLeftImage img {
+        height: 400px;
+        width: 100%;
+    }
+
+
+    .NewsRightContaier {
+        justify-content: space-evenly;
+    }
+
+
+    /* about  */
+
+    #About {
+        padding-bottom: 0px;
+    }
+
+    .AboutContainer {
+        padding: 30px 0px;
+    }
+
+    .About {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .About:last-child {
+        margin-bottom: 0px;
+    }
+
+    .aboutDetails {
+        margin-right: 0px;
+    }
+
+    .AbutseaImage2 {
+        display: none;
+    }
+
+    /* .footer  */
+    .FooterContainerMain {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .FooterConteinerContent {
+        width: 350px;
+        margin-bottom: 50px;
+    }
+
+    .FooterContainerMail {
+        position: relative;
+        width: 100%;
+    }
+
+    .FooterContainerMail li input[type="email"] {
+        width: 90%;
+        font-size: 18px;
+        height: 40px;
+    }
+
+    .FooterContainerMail button {
+        height: 40px;
+        font-size: 19px;
+    }
+}
+
+/* Small devices (portrait and large phones, 600px and up) */
+@media (max-width: 500px) {
+
+    /* ...container.. */
+    .container {
+        margin: auto;
+        max-width: 350px;
+    }
+
+    #container {
+        max-width: 100%;
+    }
+
+    /* ...this is navigation bar . */
+
+    .NavigationBar {
+        justify-content: space-around;
+    }
+
+    .navBarLeft .logo {
+        margin-right: 2rem;
+        font-size: 19px;
+    }
+
+    .hamburgoricons {
+        margin: 8px 0px;
+    }
+
+    .hamburgoricons i {
+        font-size: 25px;
+    }
+
+    .navBarRight ul li {
+        margin: 0px 36%;
+    }
+
+    #BannerContainer {
+        padding: 0 5px;
+    }
+
+    .BannerContentHeader h1 {
+        width: 295px;
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .BannerContentHeader p {
+        width: 295px;
+    }
+
+    .asideBlog h3 {
+        left: 157px;
+        font-size: 15px;
+    }
+
+    .PricePlaneBoxInfo ul li {
+        line-height: 28px;
+    }
+
+    #HappyCustomer {
+        height: 70vh;
+    }
+
+    #HappyCustomer {
+        padding: 0px;
+    }
+
+    #HappyTopContainer {
+        padding: 0px;
+    }
+
+    .happyContainer {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 15px;
+    }
+
+    .happyCustomer {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .customerIcons i {
+        margin-bottom: 15px;
+    }
+
+    #happyOFcustomer {
+        display: none;
+    }
+
+    .OurProjectContainerBox .ProjectInfo {
+        padding: 0px 5px;
+    }
+
+    .OurProjectContainerBox .ProjectInfo h3 {
+        font-size: 32px;
+    }
+
+    .OurProjectContainerBox .ProjectInfoFirstchild {
+        width: 255px;
+    }
+
+    .FooterContainerMail li input[type="email"] {
+        width: 86%;
+    }
+}
